@@ -1,0 +1,94 @@
+introduction
+https://tailwindcss.com/docs/guides/vite
+>npm create vite@latest my-project -- --template react
+>cd my-project
+>npm install -D tailwindcss postcss autoprefixer
+>npx tailwindcss init -p
+
+add this in tailwind.config.js
+/*
+content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+*/
+in src/index.css
+remove all 
+and put this 
+/*
+
+@tailwind  base;
+@tailwind  components;
+@tailwind utilities;
+*/
+
+
+delete App.css
+
+
+in App.jsx 
+remove all 
+and put this
+
+/*
+export default function App() {
+  return (
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  )
+}
+*/
+then run 
+> npm run dev
+
+> npm i react-icons --save
+
+
+we use Inter front from google font
+add these in index.css
+/*
+//add this
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind  base; // was before
+@tailwind  components; // was before
+@tailwind utilities; // was before
+//add this
+:root {
+  font-family: "Inter", sans-serif;
+}
+*/
+
+in src 
+>mkdir components
+>touch Navbar.jsx
+
+/*
+
+import React from 'react';
+import logo from '../assets/kevinRushLogo.png'
+import {FaLinkedin} from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { FaSquareXTwitter } from 'react-icons/fa6';
+import { FaInstagram } from 'react-icons/fa';
+const Navbar=()=>{
+    return(
+        <nav className="bg-red-900 mb-20 flex items-center justify-between py-6">
+            <div className="flex flex-shrink-0 items-center">
+                <img src={logo} alt="logo" />
+            </div>
+            <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
+                <FaLinkedin/>
+                <FaGithub/>
+                <FaInstagram/>
+                <FaSquareXTwitter/>
+            </div> 
+        </nav>
+    )
+}
+export default Navbar;
+
+
+*/
+bg.irelck.com/ background css tailwind
