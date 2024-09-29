@@ -41,18 +41,11 @@ export const PROJECTS = [
       "Small project that created cv without authentication. Download cv document in pdf. Built by nodejs, reactjs, css. Database is Mongodb.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
     link:"https://cvback-yj18.onrender.com"
-  },
-  {
-    title: "Task Management App",
-    image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
   }
 ];
 
 export const CONTACT = {
-  address: "Ireland",
+  address: "Ireland, Limerick",
   phoneNo: "+353 870313895",
   email: "bolormaaenkhbat222@gmail.com",
 };
